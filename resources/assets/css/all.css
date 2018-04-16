@@ -1,0 +1,206 @@
+@charset "utf-8";
+/* CSS Document */
+*, h1, h2, h3, h4, h5, h6, a, p, select {
+	font-family: "微軟正黑體", Microsoft JhengHei, sans-serif, Arial, Helvetica;
+}
+html {
+	height:100%;
+	margin:0;
+}
+
+body {
+	margin:0;
+	min-height:100%;
+	width:100%;
+}
+
+/*清除格式*/
+.CleanFormat {
+	clear:both;
+}
+/*分隔線*/
+.Dividers {
+	margin: 0 auto;
+	width:90%;
+	height:1px;
+	border-bottom:1px solid #4c58bd;
+}
+.Dividers2 {
+	margin: 0 auto;
+	width:70%;
+	height:1px;
+	border-bottom:1px dotted #4c58bd;
+}
+.newsListContent {
+	float:left;
+	margin: 10px 0;
+}
+/*頁內左邊設定start*/
+#left_page{
+/*	border-style: solid;
+	border-color: #FF0000;*/
+
+	width: 20%;
+	float: left; /*靠左*/
+}
+#left_page_content{
+	text-align: left;/*字靠左*/
+	margin-right: 15px; /*不要跟右邊靠那麼近*/
+}
+#left_page_content > ul {
+	/*list-style:none;*/ /*不要點點*/
+	width: 150px;
+	background-color: #e7d9d5;
+	box-shadow: 0 5px 10px -2px #9B9B9B;
+}
+#left_page_content > ul > li {
+	font-size: 15px;
+	color: #000000; 
+	line-height: 30px; /*行高*/
+}
+#left_page_content > ul > li > a {
+	text-decoration:none; /*不要底線*/
+	color: #000000; 
+}
+#left_page_content > ul > li > a:hover {
+	color:#ff4343;	/*滑鼠移上去變顏色*/ 
+}
+/*頁內左邊設定END*/
+/*頁內*/
+#junyi_page{
+/*	border-style: solid;
+	border-color: #000000;*/
+
+	margin:0px auto; /*置中*/
+	width: 1280px;/*720解析度*/
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+/*頁內中間設定start*/
+#junyi_page_content{
+/*	border-style: solid;
+	border-color: #222222;*/
+
+	width: 60%;
+	margin: 3px auto;/*置中 跟上下有點距離*/
+}
+#junyi_page_content > h1 {
+/*	border-style: solid;
+	border-color: #444444;*/
+
+	font-size: 20px;
+    line-height: 26px;
+    color: #ffa454;
+    border-left: 10px solid #ffa454; /*左邊的槓*/
+    text-shadow: 1px 1px 0px #E9E9E9;
+    padding-left: 5px;  /*字體與邊框的距離*/
+    letter-spacing: 3px; /*字與字之間的寬度*/
+}
+#junyi_page_content > p {
+/*	border-style: solid;
+	border-color: #00FF00;*/
+
+	color: #000000;
+	font-size: 18px;
+	text-align: left; /*字體靠左*/
+}
+#junyi_page_content > p > a{
+	text-decoration:none; /*不要底線*/
+	color: #000000;
+}
+#junyi_page_content > p > a:hover{
+	color:#ff4343;	/*滑鼠移上去變顏色*/
+}
+#junyi_page_content > ul {
+	list-style:none; /*不要點點*/
+}
+#junyi_page_content > ul > li {
+	font-size: 15px;
+	color: #000000; 
+	line-height: 30px; /*行高*/
+}
+#junyi_page_content > ul > li > a {
+	text-decoration:none; /*不要底線*/
+	color: #000000; 
+}
+#junyi_page_content > ul > li > a:hover {
+	color:#ff4343;	/*滑鼠移上去變顏色*/ 
+}
+/*頁內中間設定END*/
+/*列表設定START*/
+.list_Frame{
+	display: block;
+	border-top-style: dotted;
+	border-color: #00a3e0;
+	border-width: 2px;	
+}
+.list_Frame > ul{
+	list-style:none;
+}
+.list_Frame > ul > li {
+	text-shadow: 1px 1px 0px #E9E9E9;
+	font-size: 20px;
+	border-bottom: 2px dotted #00a3e0 !important;
+	display:block;
+	text-align:left;
+	line-height: 40px;
+	width: 100%;
+} 
+.list_Frame > ul > li > a {
+	font-size: 17px;
+	color: #000000;
+	text-decoration:none; /*不要底線*/
+}
+.list_Frame > ul > li > a:hover {
+	color:#ff4343;
+}
+/*列表設定END*/
+/*主頁專用START*/
+#main_page_news{
+/*	border-style: solid;
+	border-color: #0000FF;*/
+
+	width: 50%;
+	margin-top: 10px;/*與上方的距離*/
+	margin-bottom: 10px;
+}
+#main_page_news >  h1 {
+	font-size: 20px;
+    line-height: 26px;
+    color: #2aa2bc;
+    border-left: 10px solid #2aa2bc;
+    letter-spacing: 3px;
+    text-shadow: 1px 1px 0px #E9E9E9;
+    padding-left: 5px;
+}
+#main_page_news > p {
+	margin-right: 5px; 
+}
+#main_page_news > p > a {
+	text-decoration:none; /*不要底線*/
+	color: #000000;
+	text-shadow: 1px 1px 0px #E9E9E9;
+}
+#main_page_news > p > a:hover{
+	color:#ff4343;
+}
+/*主頁專用END*/
+/*頁內跳轉START*/
+#change_page{
+/*	border-style: solid;
+	border-color: #00FFFF;*/
+}
+#change_page > p {
+	text-align: right;
+	margin-right: 10px;
+}
+#change_page > p > a {
+	color: #2237a2;
+	text-align: right;
+	text-shadow: 1px 1px 0px #E9E9E9;
+}
+#change_page > p > a:hover {
+	text-align: right;
+	color:#ff4343;
+}
+/*頁內跳轉END*/
