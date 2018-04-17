@@ -1,5 +1,7 @@
 <?php
 	namespace App\Http\Controllers;
+
+	use Illuminate\Http\Request;
 	/**
 	* 控制主頁面
 	*/

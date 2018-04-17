@@ -4,6 +4,8 @@
 
 <div id="junyi_page">
 	<?php
+		Session::put('recruitmentID',$job_ID);
+
 		$conditions_data = DB::table('jobconditions')
 		->where('recruitmentID','=',$job_ID)
 		->first();
@@ -36,7 +38,7 @@
 		</li>
 	</ul>
 	
-	<p><a href="">我要應徵</a></p>
+	<p><a href="/file?id=<?=$job_ID?>">我要應徵</a></p>
 </div>
 
 

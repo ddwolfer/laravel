@@ -34,3 +34,6 @@ Route::group(['prefix' => 'jobs'], function(){
 
 	Route::get('/{job_ID}','JobsController@recruitmentItem');
 });
+
+Route::get('/file','FilesController@uploadForm')->name('upload.file');
+Route::post('/file','FilesController@storeFile');
