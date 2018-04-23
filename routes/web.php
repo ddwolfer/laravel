@@ -19,11 +19,12 @@ Route::get('/BusinessItems','BusinessController@JunyiBusiness');
 
 Route::get('/performance','PerformanceController@Performance');
 
-Route::get('/contact','ContactController@ContactJunyi');
+Route::group(['prefix' => 'contact'], function (){
 
+	Route::get('/','ContactController@ContactJunyi');
 
-// Route::get('/jobs','JobsController@recruitment');
-// Route::get('/jobs/{job_ID}','JobsController@recruitmentItem');
+	// Route::post('/insert','ContactController@insertdata');
+});
 
 Route::get('/news','NewsController@NewsList');
 Route::get('/news?ID={Page_ID}','NewsController@JunyiNews');
@@ -33,7 +34,10 @@ Route::group(['prefix' => 'jobs'], function(){
 	Route::get('/','JobsController@recruitment');
 
 	Route::get('/{job_ID}','JobsController@recruitmentItem');
+
+	Route::get('/test/{ID}','JobsController@TestItem');
 });
 
 Route::get('/file','FilesController@uploadForm')->name('upload.file');
+
 Route::post('/file','FilesController@storeFile');

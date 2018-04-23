@@ -1,8 +1,8 @@
 <?php
+
 	namespace App\Http\Controllers;
-	/**
-	* 控制主頁面
-	*/
+	use Illuminate\Http\Request;
+
 	class ContactController extends Controller
 	{
 		
@@ -11,7 +11,16 @@
 				'title' => '聯絡珺翊'
 			];
 
-			return view('about',$binding);
+			return view('Contact.contact',$binding);
+		}
+
+		public function insertdata(request $request)
+		{
+			$data = DB::table('contact_jies')->insert([
+				'email' => 'john@example.com', 
+			    'votes' => 0
+			]);
+
 		}
 	}
 	

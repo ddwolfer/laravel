@@ -33,6 +33,7 @@ class FilesController extends Controller
     		$file->recruitmentID = $Job_ID;
     		//存至資料庫
     		if ( $file->save() ) {
+    			return redirect('/jobs');
     			return "傳送成功 ";
     		}
     		else{

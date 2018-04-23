@@ -21,7 +21,7 @@
 		<br>
 		上傳履歷表：<input type="file" name="file" >
 		<br>
-		<input type="hidden" name="recruitment" value=<?=$ID?>>
+		<input type="hidden" name="recruitment" value=<?=$ID?> >
 		<input type="submit" value="上傳檔案" >
 	</form>
 </div>

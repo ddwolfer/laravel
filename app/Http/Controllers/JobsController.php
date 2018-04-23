@@ -23,6 +23,14 @@
 
 			return view('Jobs.RecruitmentItem',$binding);
 		}
+		
+		public function TestItem($TestItem)
+		{
+			$binding = [
+				'TestItem' => $TestItem,
+			];
+			return view('Jobs.test',$TestItem);
+		}
 	}
 	
 ?>
